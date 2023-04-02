@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace absent
+{
+    class Program
+    { 
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter the number");
+            int num = Convert.ToInt32(Console.ReadLine());
+            int count = 1;
+            //int num1 = num + 9;
+            Destination: Console.WriteLine(num + "*" + count + "=" + (num * count));
+            //Destination: Console.Writeline("number =" +num);
+            //num++;
+            count++;
+
+            if(count<=10)        //if(num<= num1)
+            {
+                goto Destination;
+            }
+            else
+            {
+                Console.WriteLine("finish.....");
+            }
+            Console.ReadLine();
+        }
+    }
+}
